@@ -5,6 +5,7 @@ const ServiceItemStyle = styled.div`
   text-align: left;
   padding: 3rem;
   border-radius: 12px;
+  background-color: var(--mediumSlateBlue);
 
   .service-icon{
     display: flex;
@@ -12,9 +13,9 @@ const ServiceItemStyle = styled.div`
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: var(--mediumSlateBlue);
+    background-color: var(--white);
     border-radius: 50%;
-    color: var(--white);
+    color: var(--mediumSlateBlue);
     margin-bottom: 1rem;
 
     svg {
@@ -26,22 +27,13 @@ const ServiceItemStyle = styled.div`
     font-size: 2rem;
     font-weight: 500;
     line-height: 1.5em;
-    color: ${props => props.theme.theme === themeList.light ? 'var(--darkBlue_2)' : 'var(--lightBlue_1)'};
-    margin-bottom: 1rem;
+    color: var(--lightBlue_1);
+    margin-bottom: 1rem!important;
   }
 
   &:hover{
     background-color: var(--mediumSlateBlue);
     cursor: pointer;
-
-    .service-icon {
-      background-color: var(--white);
-      color: var(--mediumSlateBlue);
-    }
-
-    .service-title {
-      color: var(--lightBlue_1);
-    }
 
     .service-desc {
       color: var(--lightBlue_1);
