@@ -1,11 +1,12 @@
 import styled from "styled-components";
-import themeList from "../../../theme/themeList";
+// import themeList from "../../../theme/themeList";
 
 const ServiceItemStyle = styled.div`
   text-align: left;
   padding: 3rem;
   border-radius: 12px;
   background-color: var(--mediumSlateBlue);
+  max-width: 360px;
 
   .service-icon{
     display: flex;

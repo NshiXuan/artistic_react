@@ -14,7 +14,9 @@ const Header = memo(() => {
     <HeaderStyle>
       <div className="container">
         <div className="navigation">
-          <Logo />
+          <Link to='home' smooth>
+            <Logo />
+          </Link>
           <div className="navMenu">
             <nav className={isNavOpen ? 'open' : ''}>
               {isNavOpen ? <div className="closeIcon" onClick={e => setNavOpen(false)} onKeyDown={e => setNavOpen(false)}>
@@ -22,16 +24,16 @@ const Header = memo(() => {
               </div> : <></>}
               <ul>
                 <li>
-                  <Link to='home'>首页</Link>
+                  <Link to='home' smooth>首页</Link>
                 </li>
                 <li>
-                  <Link to='service'>服务</Link>
+                  <Link to='service' smooth>服务</Link>
                 </li>
                 <li>
-                  <Link to='about'>关于</Link>
+                  <Link to='about' smooth>关于</Link>
                 </li>
                 <li>
-                  <Link to='contact'>联系</Link>
+                  <Link to='contact' smooth>联系</Link>
                 </li>
               </ul>
             </nav>

@@ -1,4 +1,5 @@
 import React, { memo } from 'react'
+import { Link } from 'react-scroll';
 
 import AboutImg from '../../assets/images/about.png';
 import PrimaryButton from '../buttons';
@@ -8,7 +9,7 @@ import AboutSectionStyle from './style'
 
 const AboutSection = memo(() => {
   return (
-    <AboutSectionStyle>
+    <AboutSectionStyle id='about'>
       <div className="container">
         <div className="about_wrapper">
           <div className="about_img">
@@ -18,7 +19,7 @@ const AboutSection = memo(() => {
             <ParagraphText className="about_subtitle">我们是谁</ParagraphText>
             <ServiceTitle className="about_title">捕捉生活的细节</ServiceTitle>
             <ParagraphText className="about_desc">“艺术”是一些充满激情的摄影师的工作室。我们的目标是捕捉您的体验。</ParagraphText>
-            <PrimaryButton className="button">保持联系</PrimaryButton>
+            <PrimaryButton buttonType={Link} to='contact' smooth className="button">保持联系</PrimaryButton>
           </div>
         </div>
       </div>

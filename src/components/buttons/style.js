@@ -8,6 +8,7 @@ const PrimaryButtonStyle = styled.div`
   font-size: 1.6rem;
   border-radius: 8px;
   font-weight: 500;
+  border: none;
 
   @media (max-width: 768px) {
     font-size: 1.4rem;

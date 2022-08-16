@@ -1,4 +1,5 @@
 import React, { memo } from 'react'
+import { Link } from 'react-scroll'
 
 import PrimaryButton from '../buttons'
 import HeroTitle from './heroTitle'
@@ -8,7 +9,7 @@ import HeroImg from '../../assets/images/hero.png'
 
 const HeroSection = memo(() => {
   return (
-    <HeroSectionStyle>
+    <HeroSectionStyle id='home'>
       <div className="container">
         <div className="hero-wrapper">
           <div className="hero-info">
@@ -18,7 +19,7 @@ const HeroSection = memo(() => {
             <ParagraphText className="hero-desc">
               因为每张照片都讲述了一个故事，所以让我们帮助您讲述您的故事.
             </ParagraphText>
-            <PrimaryButton className="button">
+            <PrimaryButton buttonType={Link} to='contact' smooth className="button">
               保持联系
             </PrimaryButton>
           </div>

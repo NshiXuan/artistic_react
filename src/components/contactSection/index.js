@@ -8,7 +8,7 @@ import PrimaryButton from '../buttons'
 
 const ContactSection = memo(() => {
   return (
-    <ContactSectionStyle>
+    <ContactSectionStyle id='contact'>
       <div className="container">
         <div className="contact_wrapper">
           <div className="contact_info">

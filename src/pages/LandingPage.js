@@ -1,6 +1,7 @@
 import React, { memo } from 'react'
 import AboutSection from '../components/aboutSection'
 import ContactSection from '../components/contactSection'
+import Footer from '../components/footer'
 
 import Header from '../components/header'
 import HeroSection from '../components/heroSection'
@@ -18,6 +19,7 @@ const LandingPage = memo(() => {
       <TeamSection />
       <NewsletterSection />
       <ContactSection />
+      <Footer />
     </div>
   )
 })

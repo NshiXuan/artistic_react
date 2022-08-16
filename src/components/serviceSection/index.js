@@ -9,7 +9,7 @@ import ServiceSectionStyle from './style'
 
 const ServiceSection = memo(() => {
   return (
-    <ServiceSectionStyle>
+    <ServiceSectionStyle id='service'>
       <div className="container">
         <ServiceTitle className="service-title">我们的服务</ServiceTitle>
         <div className="service-item">
