@@ -3,7 +3,7 @@ import PrimaryButtonStyle from './style'
 
 const PrimaryButton = memo(({ children, buttonType, ...rest }) => {
   return (
-    <PrimaryButtonStyle {...rest}>{children}</PrimaryButtonStyle>
+    <PrimaryButtonStyle as={buttonType} {...rest}>{children}</PrimaryButtonStyle>
   )
 })
 
